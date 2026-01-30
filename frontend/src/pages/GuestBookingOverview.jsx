@@ -39,7 +39,8 @@ function GuestBookingOverview() {
 
     //  Handles booking confirmation and API submission
     const handleConfirmBooking = async () => {
-        
+    console.log("totalPrice at confirm step:", totalPrice);
+
         //  Constructs booking payload with validated dates and guest info
         const bookingPayload = {
             guest_id: guestInfo.guest_id, //  Confirmed earlier in flow
@@ -50,7 +51,7 @@ function GuestBookingOverview() {
             status: "confirmed",
         };
 
-        console.log("Booking payload:", bookingPayload); // DEV NOTE - for development purposes. To be romoved 
+        console.log("Booking payload:9", bookingPayload); // DEV NOTE - for development purposes. To be romoved 
         console.log("selectedRange:", selectedRange);  // DEV NOTE - for development purooses. To be romoved 
 
         try {

@@ -1,0 +1,12 @@
+# Ignore environment configuration (database passwords)
+.env
+
+# Ignore node_modules (dependency files)
+node_modules/
+
+# Ignore logs and database backups
+*.log
+*.sql
+
+# Ignore build files (React frontend)
+/client/build/
